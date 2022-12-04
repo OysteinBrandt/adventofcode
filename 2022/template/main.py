@@ -9,7 +9,8 @@ def read_input():
     return file.read().splitlines()
 
 def main():
-  pass
+  input = read_input()
+  print(input)
 
 if __name__ == '__main__':
   main()

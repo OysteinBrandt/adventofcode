@@ -1,0 +1,23 @@
+
+First column (opponent):
+A -> rock
+B -> paper
+C -> scissors
+
+draw if equal
+
+Second column (response):
+X -> rock
+Y -> paper
+Z -> scissors
+
+score for shape you selected
+1 for rock
+2 for paper
+3 for scissors
+
++ outcome of round
+0 for loss
+3 for draw
+6 for win
+

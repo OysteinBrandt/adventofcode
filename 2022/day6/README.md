@@ -1,2 +1,2 @@
-# <NAME_OF_TASK>
-<url_to_task>
+# --- Day 6: Tuning Trouble ---
+https://adventofcode.com/2022/day/6

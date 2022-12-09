@@ -42,6 +42,9 @@ def main():
           scenic_score_right = calculate_scenic_score(tree, [int(input[y][i]) for i in range(x+1, width)])
           scenic_score = scenic_score_top * scenic_score_bottom * scenic_score_left * scenic_score_right
 
+        if scenic_score > best_scenic_score:
+          best_scenic_score = scenic_score
+
         # TODO:
         # We could check the entire range of x (left to right) in one statement,
         # and then the entire y (top to bottom) in one statement,
@@ -52,8 +55,6 @@ def main():
               if not is_visible(tree, [int(input[y][i]) for i in range(x+1, width)]):  # right
                 continue
         visible_trees += 1
-        if scenic_score > best_scenic_score:
-          best_scenic_score = scenic_score
 
   print(f"The answer to task 1 is: {visible_trees}")
   print(f"The answer to task 2 is: {best_scenic_score}")
